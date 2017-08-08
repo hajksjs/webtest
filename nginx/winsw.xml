@@ -1,0 +1,14 @@
+<service>
+  <id>NELVSerEncNginx</id>
+  <name>NELVSerEncoderNginx</name>
+  <description>NELVSerEncoderNginx</description>
+  <logpath>C:\conference\nginx\logs</logpath>
+  <log mode="roll-by-size">
+    <sizeThreshold>10240</sizeThreshold>
+    <keepFiles>8</keepFiles>
+  </log>
+  <executable>F:\conference\nginx\start_nginx.bat</executable>
+  <startarguments></startarguments>
+  <stopexecutable>F:\conference\nginx\stop_nginx_win.bat</stopexecutable>
+  <stoparguments></stoparguments>
+</service>

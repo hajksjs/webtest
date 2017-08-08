@@ -1,0 +1,55 @@
+h1{color: darkorange; text-align: center; font-size: 30px; background-color: firebrick;}
+body{background-image:url("/res/minecraft.png"); background-repeat:no-repeat; background-position:top center;background-attachment:scroll; background-origin:border-box; background-clip:content-box; background-size:300px 300px}
+.aaa{color: blue;font-size: 20px;}
+a{color: darkgoldenrod}
+p strong{color: darkgoldenrod}
+#pid{color: 0x6767a3; font-size: 20px;}
+#pidd a{color: greenyellow;font-size: 16px;}
+.pclass a{color: green;}
+.divclass {color: red; text-align:right; text-decoration:line-through; text-shadow: 3px 3px 3px black; font-size: 33px;}
+*[title]{color:blueviolet}
+*[title="aa"]{color:fuchsia}
+a:link{color:dodgerblue}
+a:active{color: aqua}
+a:hover{color: forestgreen}
+ul.circle {list-style-type:circle}
+ul.square {list-style-type:square}
+ol.upper-roman {list-style-type:upper-roman}
+ol.lower-alpha {list-style-type:lower-alpha}
+ul.img1{list-style-image:url("/res/minecraft.png")}
+ul.img2{list-style-image: url("/res/safe.ico")}
+.testImage{background-attachment:scroll}
+#tb,tr,th,td{
+    border: 1px solid green;
+}
+#tb td,th{
+    border: 1px solid green;
+    padding: 5px;
+}
+#tb{
+    border-collapse: collapse;
+    width: 500px;
+    text-align: center;
+}
+
+#tb th{
+    text-align: center;
+    color: black;
+    background-color: lightseagreen;
+}
+#tb tr.tr2 td{
+    color: black;
+    background-color: #B2FF99;
+}
+
+#p1{
+    outline-color: #FF704D;
+    outline-style: groove;
+    outline-width: 10px;
+}
+
+#p2{
+    outline-style: dotted;
+    outline-color: green;
+    outline-width: 5px;
+}
