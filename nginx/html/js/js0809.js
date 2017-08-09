@@ -33,6 +33,6 @@ document.write("<br>");
 
 function click1()
 {
-    alert("111");
-    document.write("harry");
+    alert(111);
+    //document.write("harry");
 }
