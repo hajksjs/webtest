@@ -12,7 +12,7 @@ phpinfo();
     </head>
     
     <body>
-
+        
     </body>
     
 </html>
