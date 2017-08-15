@@ -3,7 +3,7 @@
 if($("#inp1").val == null){
     $("#inp1").onblur="alert('input cannot be empty')";
 }
-//没成功
+//没成功onblur="alert('input cannot be empty')" 
 //================================//
 
 x=5+5;

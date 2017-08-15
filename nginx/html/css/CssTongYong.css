@@ -13,3 +13,14 @@
 body{
     background-color: #d67c00;
 }
+
+.class_1 {
+    height:100px;
+    width:100px;
+    background:red;
+}
+.class_2 {
+    height:100px;
+    width:100px;
+    background:blue;
+}
