@@ -1,0 +1,31 @@
+Web学习 
+
+1、DOM对象
+	定义：DOM 是 文档对象模型（Document Object Model）的简称，它的基本思想是把结构化文档（比如 HTML 和 XML）解析成一系列的节点（就是node对象），再由这些节点组成一个树状结构（DOM Tree）。所有的节点和最终的树状结构，都有规范的对外接口，以达到使用编程语言操作文档的目的，所以，DOM 可以理解成文档（HTML 文档、XML 文档）的编程接口。
+
+2、节点有七种类型：
+	Document：整个文档树的顶层节点  
+	DocumentType：doctype标签（比如<!DOCTYPE html>）  
+	Element：网页的各种HTML标签（比如<body>、<a>等）  
+	Attribute：网页元素的属性（比如class="right"）  
+	Text：标签之间或标签包含的文本  
+	Comment：HTML或XML的注释  
+	DocumentFragment：文档的片段
+		Document和Element是两个重要的DOM类。
+		
+3、？有一个特别奇怪的地方，在js文件里利用id啥的来设置div颜色一直不成功 ？ 忽然想到一个原因，就是这是个静态的界面，所以是按照顺序一行一行加载，之前loadui.js之所以把js文件放到头文件，还能顺利加载，是因为有一个不断刷新的函数一直在读，就是setInterval（），现在如果还把js文件扔到头部，不刷新的话，他就会在界面元素加载之前加载，自然就无法修饰界面元素，所以才无效果，之前一直搞错了。
+
+4、	按id取元素：$("#my_div")，document.getElementById
+	按name或tagname取元素
+	
+	按class取：$(".my_class")
+	
+5、发现一个小操作，对jquery的拉伸隐藏操作，对某个元素使用slideToggle（）函数，可以使某一部分通过动画隐藏或者显示，然后呢，在document里ready函数里利用setinterval函数持续调用，就会实现一个来回缩放的操作，感觉自己屌屌的\(^o^)/~
+
+6、查询和设置元素属性：
+	getAttribute（）、setAttribute（）；这里我把js和jquery的方法合在一起写了，这是大大滴错误，很多时候，jquery的函数、方法里不能套用jquery的方法，反之同理。
+	
+	jquery里的获取方式为attr（）
+	
+我决定JS简单看一下赶紧过，主要弄jquery吧；
+	

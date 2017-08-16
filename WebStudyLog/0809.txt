@@ -1,0 +1,36 @@
+Web学习
+
+JS：
+
+1、function 函数名（参数1，参数2）
+	{
+		函数体；
+		
+		return 返回值；
+	}
+
+2、document.write感觉挺奇怪的，利用函数按钮点击来write的话，write完界面就清空了，啥情况，但是如果只是alert的话对界面主题没影响？例
+	function click1()
+	{
+		alert(111);
+		//document.write("harry");
+	}
+	
+	<body>
+        <button onclick="click1()">click1</button>
+    </body>
+
+3、	常用事件：
+	onclick 单击
+	ondblclick 双击
+	onfocus 元素获得焦点
+	onblur 元素失去焦点
+	onmouseover 鼠标移到某元素之上
+	onmouseout 鼠标从某元素移开
+	onmousedown 鼠标按钮被按下
+	onmouseup 鼠标按键被松开
+	onkeydown 某个键盘按键被按下
+	onkeyup 某个键盘按键被松开
+	onkeypress 某个键盘按键被按下并松开
+	
+	？现在的关键是怎么把js中的特定东西放到html里面响应呢，在php里设置id好像不太对啊？

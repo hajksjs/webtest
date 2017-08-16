@@ -1,0 +1,47 @@
+Git 学习
+1、咋用github呢，本地库很简单会用，咋着联网呢，开始一些使用注意事项
+	We recommend including a README, or a file with information about your project.（最好在创建库的时候加一个readme来方便阅读）
+	
+2、Bravo！干得好；其实用github不要太简单，尤其是本地装有tortoisegit之后，直接在github网站上建立自己的版本库，然后clone下来地址，然后在本地进行正常的git操作就ok了。完美~我有属于自己的git版本库喽~欧耶\(^o^)/（很像百度云这种功能，但是同步操作起来版本控制明显更舒服）
+	对了，git需要先安装git （bash？），然后tortoisegit，然后网络利用github
+
+Web 学习：
+
+CSS盒子模型（更好的布局）
+1、组成：
+	a）margin-外边距
+	b）border-边框
+	c）padding-内边距
+	d）content-内容
+	
+2、？ 增加内边距、边框和外边距不会影响内容区域的尺寸，但是会增加元素框的总尺寸。？
+外边距可以是负值，而且在很多情况下都要使用负值的外边距。
+
+3、似乎所有设置四边属性的顺序都是 上、右、下、左；成对出现就是上下左右；设置一边的话padding-top，padding-right，padding-bottom，padding-left；对称赋值；
+
+4、em是相对大小，相对于上一级继承大小；ex是相对于字符x的大小，汗颜~
+
+5、？发现一个问题，设置table的时候，如果是在界面文件直接添加修饰，会自动继承给子类比如table设置有border，tr、td都有border；但是在css文件中设置table属性时，只有table有border，不会自动继承给tr、td。
+
+ps：上下紧邻的两个块会自动合并一个margin；大margin会把小margin包含在里面
+
+6、总体感觉盒子跟之前也没啥区别啊，就是调节调节边框什么的？
+
+CSS定位、浮动、尺寸、导航栏、图片
+
+1、三种定位机制：普通流（顺序）；浮动流（相对）；绝对定位（绝对）；
+
+2、定位属性position，通过对top，right，bottom，left四个属性赋值偏移，
+	overflow 设置元素溢出其区域发生的事情；
+	clip 设置元素的显示形状,多用于图片；
+	vertical-align 设置元素的垂直对其方式；
+	z-index 设置元素的堆叠顺序；
+	
+3、float，前面学过了；
+
+4、尺寸可以设置最大最小min-height，max-width；
+
+5、导航栏：1、水平；2、垂直；各种设置网站导航对link、visited、active、hover设置；dispaly对li设置可以改变竖排还是横排显示。
+
+6、图片：透明度：opacity: 0.5;
+	

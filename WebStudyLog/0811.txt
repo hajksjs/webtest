@@ -1,0 +1,40 @@
+Web 学习
+
+1、js多有数据都可被视为对象，每个对象都有属性（properties）和方法（methods）；
+	属性：反应该对象特性，长度、宽度、文字框等等；
+	方法：能对该对象做的一些事情，表单的提交“submit”，窗口的滚动“scrolling”等等；
+	
+2、创建对象：
+	a）可以new一个对象，然后对这个对象设置各种属性和方法，例如：
+		var student = new Object();
+		student.name = "lala";
+		student.dada = function(){};
+		
+	b）也可以利用大括号按创建数组的方式创建对象，例如：
+		var student = {student.name :"lala"; }
+		var student = {};student.name = "Tom";
+		？但是这种不能创建函数，╮(╯▽╰)╭，目前是连普通对象创建都有问题？
+	
+	c）也可以利用函数的方式创建对象，例如：
+		function student(name,age){
+		this.name=name;
+		this.study = function(){
+			alert();
+			};
+		}
+		这个是为了批量定义一些对象。
+		
+	？╮(╯▽╰)╭目前只有第一种试验成功，我也是醉呢 ？
+
+3、反复访问某个对象的时候，可以使用with语句简化操作，不用反复使用“.”符号来调用，例如：
+	with(student1){var x = name;
+					var y= age;
+					study();
+					eat();
+				}
+
+4、常用内置对象：
+	a）String： 只有一个属性length，包括空格和符号，方法有19个；
+	b）Math： “数学对象”，提供对数据的数学计算，顾名思义属性和方法基本上都是数学上常用的，？没明白怎么用的？
+	c）Array： js只有一维数组，如果使用多维数组，需要使用虚拟方法 var myArray = new Array(new Array(), new Array(), new Array(), ...);但是调用的时候还是按多维数组的调用方式，myArray【2】【3】这样子调用。
+	

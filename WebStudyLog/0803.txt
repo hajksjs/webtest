@@ -1,0 +1,54 @@
+学习：HTML
+
+1、有序列表<ol>标签，每个列表始于<li>标签。对于数字排序来说，可以通过start=来设置开始位置；但是其他不能，比如type=“i”为小写罗马字符排序，只能从i开始。
+
+2、无序列表<ul>标签，type标签有square和circle用来设置表前小点形状。
+
+3、定义性列表：定义列表通常用于术语的定义和解释。定义列表由< dl>开始，术语由< dt>开始，解释说明由< dd>开始，< dd>....< /dd>里的文字缩进显示。（其实就是相当于列表中的排序和小点用文字表示）
+
+4、html块：
+	a）块级元素：总是独占一行，其中width、padding（内边距）、margin（外边距）等都单独可调，与之前之后元素分开，如< h1>, < p>, < ul>, < table>标签；
+	b）内联元素：与相邻元素在同一行，padding等不可调，如< b>, < td>, < a>, < img>标签；
+
+	c）最常见的<div>用来定义分区（块）	<span>用来组合文档中行内元素
+
+	d）╮(╯▽╰)╭网页布局通过table或div实现，hiahia
+
+5、div块如果想做成表格那样子，需要分别创建几个div，然后分别类似#aaaa这样命名，注意在头部就声明完成，应该可以做到css里？：
+
+<head>
+    <style>
+        div#container{width:1000px}
+        div#header {background-color: royalblue ;height: 100px;text-align:center;font-size: 20px}
+        div#sidebar{background-color: darkorange;height:400px;width:300px;float:left;}
+        div#mainbody {background-color: forestgreen;height:400px;width:700px;float:left;}
+        div#footer {background-color: powderblue;height: 100px;clear:both;text-align:center;}
+    </style>
+</head>
+
+6、表单：form
+
+<form>
+username：
+<input type="text" name="username">
+<br />
+password：
+<input type="password" name="password">
+</form>
+
+#7、jquery中的$("#id")和JS中的document.getElementById("id")得到的效果并不完全一样；比如获取radio的checked标识，如果是jquery，需要用prop（）来获取checked的具体值，返回true或false；如果是JS，直接.checked就可以返回true和false了？ 没搞懂attr（）返回的是啥？
+
+	a）一般设jQuery对象:$sss=jQuery对象，DOM对象:var sss=DOM对象；
+	b）DOM对象就是web标准，html上的标准对象，使用DOM方法；jQuery对象相当于是自己封装的，对象本身是一个集合，使用jQuery方法；这两套方法不通用；
+	c）普通的Dom对象一般可以通过$()转换成jQuery对象，如$(document.getElementById("msg")) 是jQuery对象；
+	d）jQuery对象要转换为Dom对象则必须取出其中的某一项，一般可通过索引取出，如 $("#msg")[0]是DOM对象。
+	e）获取对象的方式，例子：
+	<form name="formName"  id="formid"></form>
+	通过id：
+		document.getElementById('formid');	？ 单引号双引号好像都可以 ？
+		$('#formid')
+	通过name：
+		document.getElementByName('formName')[0];
+		$("form[name='formName']")
+
+8、
