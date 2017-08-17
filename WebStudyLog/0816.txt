@@ -1,0 +1,3 @@
+Web学习
+
+1、Css里 word-wrap:break-word;来控制如果单词过长自动换行，word-break：break-all；来控制单词内换行
